@@ -1,0 +1,142 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #111;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
+}
+
+header .logo {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+}
+
+.banner img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.banner-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.banner-texto h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.banner-texto .btn {
+  padding: 10px 25px;
+  background-color: #111;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.cards-produtos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 20px;
+}
+
+.card {
+  border: 1px solid #eee;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card button {
+  padding: 10px 20px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+section h2 {
+  text-align: center;
+  margin: 50px 0 20px;
+  font-size: 32px;
+}
+
+.novidades, .contato {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contato form input {
+  padding: 10px;
+  width: 250px;
+  margin-right: 10px;
+}
+
+.contato form button {
+  padding: 10px 20px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .redes-sociais a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
